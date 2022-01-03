@@ -15,15 +15,15 @@ pipeline {
         
         nexusArtifactUploader artifacts: [
             [
-                artifactId: 'Demo1',
+                artifactId: 'Demo11',
                 classifier: '',
-                file: '/var/lib/jenkins/jobs/PipelineDemo/config.xml', 
+                file: '/var/lib/jenkins/jobs/RohitPipeline/config.xml', 
                 type: 'war'
             ]
         ], 
-            credentialsId: '692fe79a-b338-46d0-8bcc-df06878cb8b2',
-            groupId: 'Demo1', 
-            nexusUrl: '65.0.99.108:8081', 
+            credentialsId: '1b207162-1d0d-4008-a8ee-4c19cbb0887d',
+            groupId: 'Demo11', 
+            nexusUrl: '65.1.111.57:8081', 
             nexusVersion: 'nexus3',
             protocol: 'http', 
             repository: 'maven-snapshots', 
